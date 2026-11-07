@@ -1,0 +1,211 @@
+.accent-text {
+    color: var(--orange);
+}
+
+.my-course-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.my-course-row:last-child {
+    border-bottom: none;
+}
+
+.my-course-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 10px;
+    background: rgba(249, 115, 22, 0.12);
+    color: var(--orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.my-course-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.my-course-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.my-course-info strong {
+    display: block;
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.my-course-info span {
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+.my-course-progress {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.progress-track {
+    width: 100px;
+    height: 6px;
+    background: var(--border-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--orange);
+    border-radius: 10px;
+}
+
+.progress-percent {
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 600;
+    width: 36px;
+    text-align: right;
+}
+
+.student-profile-photo {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 12px;
+}
+
+.student-profile-photo img,
+.student-photo-fallback {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.student-photo-fallback {
+    background: rgba(249, 115, 22, 0.15);
+    color: var(--orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.student-profile-name {
+    text-align: center;
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 20px;
+}
+
+.student-detail-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.student-detail-row:first-of-type {
+    border-top: none;
+}
+
+.student-detail-row i {
+    color: var(--orange);
+    margin-top: 3px;
+    width: 14px;
+}
+
+.student-detail-row span {
+    display: block;
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+.student-detail-row strong {
+    display: block;
+    font-size: 13px;
+    color: var(--white);
+    font-weight: 600;
+}
+
+/* My Courses grid */
+.my-courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.my-course-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.my-course-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.my-course-card h3 {
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    margin: 0 0 8px;
+}
+
+.my-course-card-meta {
+    color: var(--text-muted);
+    font-size: 12px;
+    margin: 0 0 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.my-course-card-meta .dot {
+    margin: 0 2px;
+}
+
+.my-course-card-percent {
+    color: var(--text-muted);
+    font-size: 12px;
+    margin: 6px 0 0;
+}
+
+.my-course-card-date {
+    color: var(--text-muted);
+    font-size: 11.5px;
+    margin: 10px 0 0;
+}
+
+@media (max-width: 480px) {
+    .my-course-row {
+        flex-wrap: wrap;
+    }
+    .my-course-progress {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 8px;
+    }
+}

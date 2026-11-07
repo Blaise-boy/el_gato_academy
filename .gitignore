@@ -1,0 +1,12 @@
+# Real database credentials (never commit these)
+config/database.php
+
+# Leftover helper script
+hash.php
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+*.log
